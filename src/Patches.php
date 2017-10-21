@@ -355,7 +355,7 @@ class Patches implements PluginInterface, EventSubscriberInterface
                     $e->getMessage() .
                     '</error>'
                 );
-                if (getenv('COMPOSER_EXIT_ON_PATCH_FAILURE') || !empty($extra['composer-exit-on-patch-failure'])) {
+                if ($this->getConfig('exit-on-patch-failure')) {
                     throw new \Exception("Cannot apply patch $description ($url)!");
                 }
             }
