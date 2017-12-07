@@ -10,7 +10,7 @@
     }
   ],
   "require": {
-    "cweagans/composer-patches": "*@dev",
+    "vijaycs85/composer-patches": "*@dev",
     "drupal/drupal": "~8.2"
   },
   "extra": {
